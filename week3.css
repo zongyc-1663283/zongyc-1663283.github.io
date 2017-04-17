@@ -1,0 +1,108 @@
+
+
+#account {
+	width: 1000px;
+	margin-left: auto;
+	margin-right:auto;
+	margin-bottom: 0px;
+	border: solid 2px red;
+	text-align: center;
+	
+	padding:5px;
+}
+
+#personalInformation {
+	width: 1000px;
+	margin-left: auto;
+	margin-right:auto;
+	margin-bottom: 0px;
+	border: solid 2px #B8860B;
+	text-align: center;
+
+	padding:5px;
+}
+#availability {
+	width: 1000px;
+	margin-left: auto;
+	margin-right:auto;
+	margin-bottom: 0px;
+	border: solid 2px #00FF00;
+	text-align: center;
+
+	padding:5px;
+}
+ 
+ #personalStatement {
+	 width: 1000px;
+	margin-left: auto;
+	margin-right:auto;
+	margin-bottom: 0px;
+	border: solid 2px #000080;
+	text-align: center;
+
+	padding:5px;
+ }
+
+ #additionalQuestion {
+	 width: 1000px;
+	margin-left: auto;
+	margin-right:auto;
+	margin-bottom: 0px;
+	border: solid 2px white;
+	text-align: center;
+
+	padding:5px;
+ }
+
+#submitArea {
+	margin-left: auto;
+	margin-right:auto;
+ }
+
+
+ul{
+	list-style-type: none;
+	padding-left: 8px;
+}
+
+h2 {
+	color:#FF4500; 
+	font-size: 40px;
+	font-family: "Passion One"; 
+	margin-bottom: 0px;
+	margin-left: auto;
+	margin-right:auto;
+	text-align: center;
+}
+
+div{
+	background-color: 	#8B4513;
+}
+
+body{
+	background-color: black;
+	background-image: url('always_grey.png');
+}
+
+label {
+	color: black; 
+	font-weight: bold;
+	font-size: 18px;
+}
+
+legend {
+	color:	#FFD700;
+	font-size: 30px;
+	font-family: times;
+}
+
+li {
+	color: white; 
+	font-size: 12px;
+}
+
+th {
+	color: white; 
+	font-size: 12px;
+}
+

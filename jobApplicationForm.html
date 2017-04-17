@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title id="mainTitle">Job Application</title>
+	<link rel="stylesheet" type="text/css" href="week3.css" />
+</head>
+<body>
+
+<h2>Job Application</h2>
+
+<form action="http://gclass.alexburner.com/formtest.php" method="post">
+
+	<fieldset id = "account">
+		<legend>Account</legend>
+		<div class="field">
+			<label>Email:</label> 
+			<input type="text" name="email">
+		</div>
+		<div class="field">
+			<label>Password:</label> 
+			<input type="password" name="password">
+		</div>
+		<div class="field">
+			<label>Repeat password:</label> 
+			<input type="password" name="password_r">
+		</div>
+	</fieldset>
+
+	<fieldset id="personalInformation">
+		<legend>Personal Information</legend>
+		<div class="field">
+			<label>Full Name:</label> 
+			<input type="text" name="name">
+		</div>
+		<div class="field">
+			<label>Street Address:</label> 
+			<input type="text" name="street">
+		</div>
+		<div class="field">
+			<label>City:</label> 
+			<input type="text" name="city">
+		</div>
+		<div class="field">
+			<label>State:</label> 
+			<select name="state">
+				<option value="" selected="true">Choose a State</option>
+				<option value="AL">Alabama</option>
+				<option value="AK">Alaska</option>
+				<option value="AZ">Arizona</option>
+				<option value="AR">Arkansas</option>
+				<option value="CA">California</option>
+				<option value="CO">Colorado</option>
+				<option value="CT">Connecticut</option>
+				<option value="DE">Delaware</option>
+				<option value="DC">District of Columbia</option>
+				<option value="FL">Florida</option>
+				<option value="GA">Georgia</option>
+				<option value="HI">Hawaii</option>
+				<option value="ID">Idaho</option>
+				<option value="IL">Illinois</option>
+				<option value="IN">Indiana</option>
+				<option value="IA">Iowa</option>
+				<option value="KS">Kansas</option>
+				<option value="KY">Kentucky</option>
+				<option value="LA">Louisiana</option>
+				<option value="ME">Maine</option>
+				<option value="MD">Maryland</option>
+				<option value="MA">Massachusetts</option>
+				<option value="MI">Michigan</option>
+				<option value="MN">Minnesota</option>
+				<option value="MS">Mississippi</option>
+				<option value="MO">Missouri</option>
+				<option value="MT">Montana</option>
+				<option value="NE">Nebraska</option>
+				<option value="NV">Nevada</option>
+				<option value="NH">New Hampshire</option>
+				<option value="NJ">New Jersey</option>
+				<option value="NM">New Mexico</option>
+				<option value="NY">New York</option>
+				<option value="NC">North Carolina</option>
+				<option value="ND">North Dakota</option>
+				<option value="OH">Ohio</option>
+				<option value="OK">Oklahoma</option>
+				<option value="OR">Oregon</option>
+				<option value="PA">Pennsylvania</option>
+				<option value="RI">Rhode Island</option>
+				<option value="SC">South Carolina</option>
+				<option value="SD">South Dakota</option>
+				<option value="TN">Tennessee</option>
+				<option value="TX">Texas</option>
+				<option value="UT">Utah</option>
+				<option value="VT">Vermont</option>
+				<option value="VA">Virginia</option>
+				<option value="WA">Washington</option>
+				<option value="WV">West Virginia</option>
+				<option value="WI">Wisconsin</option>
+				<option value="WY">Wyoming</option>
+			</select>
+		</div>
+		<div class="field">
+			<label>ZIP:</label> 
+			<input type="text" name="zip">
+		</div>
+	</fieldset>
+
+	<fieldset id="availability">
+		<legend>Availability</legend>
+		<div class="field">
+			<label>Are you legally able to be employed in this country?</label> 
+			<input type="radio" name="legal" value="yes">Yes
+			<input type="radio" name="legal" value="no">No
+		</div>
+		<div class="field">
+			<label>What type of position are you seeking? (check all that apply)</label>
+			<ul>
+				<li><input type="checkbox" name="position_pt" value="parttime">Part time</li>
+				<li><input type="checkbox" name="position_ft" value="fulltime">Full time</li>
+				<li><input type="checkbox" name="position_sl" value="seasonal">Seasonal</li>
+				<li><input type="checkbox" name="position_tp" value="temporary">Temporary</li>
+			</ul>
+		</div>
+		<div class="field">
+			<label id="subtitle">Hours available</label>
+			<table>
+				<tr>
+					<td></td>
+					<th>Sun</th>
+					<th>Mon</th>
+					<th>Tue</th>
+					<th>Wed</th>
+					<th>Thu</th>
+					<th>Fri</th>
+					<th>Sat</th>
+				</tr>
+				<tr>
+					<th>From</th>
+					<td><input type="time" size="5" name="su_from"></td>
+					<td><input type="time" size="5" name="mo_from"></td>
+					<td><input type="time" size="5" name="tu_from"></td>
+					<td><input type="time" size="5" name="we_from"></td>
+					<td><input type="time" size="5" name="th_from"></td>
+					<td><input type="time" size="5" name="fr_from"></td>
+					<td><input type="time" size="5" name="sa_from"></td>
+				</tr>
+				<tr>
+					<th>Until</th>
+					<td><input type="time" size="5" name="su_until"></td>
+					<td><input type="time" size="5" name="mo_until"></td>
+					<td><input type="time" size="5" name="tu_until"></td>
+					<td><input type="time" size="5" name="we_until"></td>
+					<td><input type="time" size="5" name="th_until"></td>
+					<td><input type="time" size="5" name="fr_until"></td>
+					<td><input type="time" size="5" name="sa_until"></td>
+				</tr>
+			</table>
+		</div>
+	</fieldset>
+
+	<fieldset id="personalStatement">
+		<legend>Personal Statement</legend>
+		<div class="field">
+			<label>Why do you deserve this job?</label><br>
+			<textarea name="deserve" rows="6" cols="60"></textarea>
+		</div>
+		<div class="field">
+			<label>Describe a recent project:</label><br>
+			<textarea name="project" rows="6" cols="60"></textarea>
+		</div>
+	</fieldset>
+
+	<fieldset id="additionalQuestion">
+		<legend>Additional Question</legend>
+		<div class="field">
+			<label>0. What time is it now?</label> 
+			<td><input type="time" size="5" name="sa_until"></td>
+		</div>
+		<br/>
+		<div class="field">
+			<label>1. If c is an eigenvalue of A, then c^2 is an eigenvalue of A^2</label> 
+			<input type="radio" name="legal" value="True">Ture
+			<input type="radio" name="legal" value="False">False
+		</div>
+		<br>
+		<div class="field">
+			<label>2. For A·<b>x<b/> = λ·<b>x<b/>, λ is called </label> 
+			<select name="answer">
+				<option value="" selected="true">choose an answer</option>
+				<option value="False">eigenvector</option>
+				<option value="True">eigenvalue</option>
+				<option value="False">eigenmatrix</option>
+				<option value="False">eigenconstant</option>
+				<option value="False">lambda</option>
+			</select>
+		</div>
+		<br/>
+		<div class="field">
+			<label>3. Bill is twenty-five years from retirement; in order to retire, Bill needs $500,000
+in his saving’s account when he retires in order to maintain his current standard of living.
+If Bill has $100,000 in his saving’s account right now, and the account earns 5% annually
+(compounded continuously), how much does Bill need to save each year to reach his
+goal?
+			</label><br>
+			<textarea name="deserve" rows="10" cols="150"></textarea>
+		</div>
+		<br/>
+		<div class="field">
+			<label>4. What do you want to do now? (check all that apply)</label>
+			<ul>
+				<li><input type="checkbox" name="position_pt" value="wall">Build a wall</li>
+				<li><input type="checkbox" name="position_ft" value="prosper">Make America great again</li>
+				<li><input type="checkbox" name="position_sl" value="aggressive">Grab the author of this web page by the pussy</li>
+				<li><input type="checkbox" name="position_tp" value="self-reflective">Be in jail</li>
+			</ul>
+		</div>
+		<br/>
+		<div class="field">
+			<label>5. What do you think about the quality of this job application form? </label> 
+			<select name="answer">
+				<option value="" selected="true">choose an answer</option>
+				<option value="good">Good</option>
+				<option value="good">Very Good</option>
+				<option value="good">Best Ever!</option>
+			</select>
+		</div>
+	</fieldset>
+		<input type="submit" value="Submit form">
+		<input type="submit" value="Contact with 911">
+</form>
+</body>
+</html>
